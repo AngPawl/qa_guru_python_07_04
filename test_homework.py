@@ -1,4 +1,4 @@
-from random import randint
+from random import sample
 from math import pi
 
 def test_greeting():
@@ -60,18 +60,7 @@ def test_random_list():
     """
 
     # TODO создайте список
-    l = []
-
-    l.append(randint(1, 100))
-    l.append(randint(1, 100))
-    l.append(randint(1, 100))
-    l.append(randint(1, 100))
-    l.append(randint(1, 100))
-    l.append(randint(1, 100))
-    l.append(randint(1, 100))
-    l.append(randint(1, 100))
-    l.append(randint(1, 100))
-    l.append(randint(1, 100))
+    l = sample(range(1, 100), 10)
 
     l.sort()
 
